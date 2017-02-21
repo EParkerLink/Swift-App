@@ -15,8 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var text2: UITextField!
     
     @IBAction func button03_tap(_ sender: Any) {
-        print(text1.text!)
-        print(text2.text!)
+        Label01.text = "Sum: \(Double(text1.text!)! + Double(text2.text!)!)"
     }
     
     override func viewDidLoad() {
