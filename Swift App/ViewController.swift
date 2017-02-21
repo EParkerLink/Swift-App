@@ -11,23 +11,14 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var Label01: UILabel!
-    @IBAction func button_tap(_ sender: Any) {
-        // This comment is here as an example
-        Label01.text = "Evan's Code Works"
-    }
-    @IBAction func button02_tap(_ sender: Any) {
-        Label01.text = "Evan's Other Code Works"
-    }
-    
-    var tap_count = 0
+    @IBOutlet weak var text1: UITextField!
+    @IBOutlet weak var text2: UITextField!
     
     @IBAction func button03_tap(_ sender: Any) {
-        tap_count += 1
-        if tap_count > 9{
-            Label01.text = "Congrats, you tapped the button 10 times."
-            tap_count = 0
-        }
+        print(text1.text!)
+        print(text2.text!)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
