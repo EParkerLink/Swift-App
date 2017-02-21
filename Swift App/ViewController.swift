@@ -23,8 +23,8 @@ class ViewController: UIViewController {
     
     @IBAction func button03_tap(_ sender: Any) {
         tap_count += 1
-        if tap_count > 4{
-            Label01.text = "Congrats, you tapped the button 5 times."
+        if tap_count > 9{
+            Label01.text = "Congrats, you tapped the button 10 times."
             tap_count = 0
         }
     }
